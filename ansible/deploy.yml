@@ -1,0 +1,17 @@
+- name: Docker → Kubernetes deployment using Ansible
+  hosts: local
+  become: false
+
+  tasks:
+    - name: Build Docker image
+      command: docker build -t webapp:v1 .
+      args:
+        chdir: ..
+
+    - name: Load image into Minikube
+      command: minikube image load webapp:v1
+
+    - name: Apply Kubernetes manifests
+      command: kubectl apply -f k8s/
+      args:
+        chdir: ..

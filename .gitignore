@@ -1,0 +1,13 @@
+# Jenkins runtime data
+jenkins_home/
+
+# Minikube local cluster data
+.minikube/
+
+# Kubernetes config (if any)
+.kube/
+
+# Logs
+*.log
+
+kubectl
