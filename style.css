@@ -12,7 +12,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	background: #d72b2b;
+	background: #e7d2d2;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -59,7 +59,7 @@ nav ul li a {
 nav ul li a:hover {
 	color: #fff;
 	border-radius: 5px;
-	background: #DF2771;
+	background: #0ca419;
 }
 .active {
 	color: #fff;
